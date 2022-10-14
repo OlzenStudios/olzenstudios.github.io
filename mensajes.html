@@ -14,6 +14,7 @@
 </head>
 
 <body>
+
     <div class="content">
         <div class="message-panel">¡Gracias por escanear!</div>
         <div class="message-panel">¡Durante las carreras nos puedes decir lo que quieras!</div>
@@ -21,16 +22,20 @@
         <div class="message-panel">⬇️ Escribe aquí ⬇️</div>
 
         <div class="message-panel">
-            <input id="optionalName" class="input" type="text" placeholder="Nombre (opcional)">
+            <input id="optionalName" class="input" type="text" placeholder="Tu nombre (opcional)">
         </div>
         <div class="message-panel">
-            <textarea name="messageForDrivers" id="messageForDrivers" class="textarea"></textarea>
+            <textarea name="messageForDrivers" id="messageForDrivers" class="textarea"
+                placeholder="Tu mensaje"></textarea>
         </div>
 
         <div class="message-panel">
-            <button>Enviar</button>
+            <button onclick="processMessage()">Enviar</button>
+            <button onclick="speak()">Escuchar</button>
         </div>
     </div>
+
+    <script src="./js/messages.js"></script>
 </body>
 
 </html>
